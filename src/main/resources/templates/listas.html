@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Listas</title>
+</head>
+<body>
+<h1>Minhas Listas</h1>
+<form action="/listas/create" method="post">
+    <input type="text" name="nome" placeholder="Nome da Lista" required>
+    <button type="submit">Criar Lista</button>
+</form>
+
+<div th:each="lista : ${listas}">
+    <h2 th:text="${lista.nameLista}"></h2>
+    <form th:action="@{/listas/{idLista}/itens(idLista=${lista.idLista})}" method="post">
+        <input type="text" name="nameItem" placeholder="Item" required>
+        <button type="submit">Adicionar Item</button>
+    </form>
+    <ul>
+        <li th:each="item : ${lista.itens}" th:text="${item.nameItem}"></li>
+    </ul>
+</div>
+</body>
+</html>
