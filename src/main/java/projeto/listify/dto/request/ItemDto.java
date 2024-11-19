@@ -46,7 +46,6 @@ public class ItemDto {
         return new Item(
                 null,
                 nome,
-                false,
                 lista,
                 categoria);
     }

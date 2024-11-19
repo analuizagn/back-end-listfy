@@ -3,6 +3,7 @@ package projeto.listify.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import projeto.listify.entity.Item;
 import projeto.listify.entity.Lista;
 import projeto.listify.service.IListaService;
 

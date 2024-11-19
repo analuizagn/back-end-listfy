@@ -1,0 +1,13 @@
+SELECT
+    listas.nome AS lista_nome,
+    itens.id AS item_id,
+    itens.nome AS item_nome,
+    categorias.nome AS categoria_nome
+FROM
+    itens
+INNER JOIN
+    listas ON itens.lista_id = listas.id
+INNER JOIN
+    categorias ON itens.categoria_id = categorias.id
+WHERE
+    listas.id = 1;

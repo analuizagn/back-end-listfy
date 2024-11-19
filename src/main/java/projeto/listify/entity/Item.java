@@ -1,5 +1,6 @@
 package projeto.listify.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,17 +12,16 @@ public class Item {
     private Long id;
     @Column(nullable = false)
     private String nome;
-    @Column(nullable = false)
-    private boolean concluido;
 
     @ManyToOne
     @JoinColumn(name = "lista_id")
+    @JsonBackReference
     private Lista lista;
     @ManyToOne
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
-    public Item(Long id, String nome, boolean b, Lista lista, Categoria categoria) {
+    public Item(Long id, String nome, Lista lista, Categoria categoria) {
     }
 
     public Item() {
@@ -43,10 +43,6 @@ public class Item {
         this.nome = nome;
     }
 
-    public void setConcluido(boolean concluido) {
-        this.concluido = concluido;
-    }
-
     public Lista getLista() {
         return lista;
     }
@@ -61,9 +57,5 @@ public class Item {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
-    }
-
-    public boolean isConcluido() {
-        return true;
     }
 }

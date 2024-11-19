@@ -1,5 +1,6 @@
 package projeto.listify.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class Lista {
     @Column(nullable = false) private Long id;
     @Column(nullable = false) private String nome;
     @OneToMany(mappedBy = "lista")
+    @JsonManagedReference
     private List<Item> itens;
 
     public Lista() {
