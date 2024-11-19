@@ -7,5 +7,4 @@ import projeto.listify.entity.Lista;
 
 @Repository
 public interface ListaRepository extends JpaRepository<Lista, Long> {
-    void delete(ListaView existingLista);
 }
