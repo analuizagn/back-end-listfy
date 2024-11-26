@@ -26,16 +26,22 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(new UserView(savedUser));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<UserView> findById(@PathVariable Long id) {
         User user = this.userService.findById(id);
         return ResponseEntity.status(HttpStatus.OK).body(new UserView(user));
     }
 
-    @DeleteMapping("/{id}")
+    @GetMapping("/email/{email}")
+    public ResponseEntity<UserView> findByEmail(@PathVariable String email) {
+        User user = this.userService.findByEmail(email);
+        return ResponseEntity.status(HttpStatus.OK).body(new UserView(user));
+    }
+
+    @DeleteMapping("/{email}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteUser(@PathVariable Long id) {
-        this.userService.delete(id);
+    public void deleteUserByEmail(@PathVariable String email) {
+        this.userService.deleteUserByEmail(email);
     }
 
     @PatchMapping

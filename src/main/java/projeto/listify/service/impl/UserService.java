@@ -26,8 +26,14 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public void delete(Long id) {
-        User user = this.findById(id);
+    public User findByEmail(String email) {
+        return this.userRepository.findByEmail(email)
+                .orElseThrow(() -> new BusinessException("E-mail " + email + " não encontrado"));
+    }
+
+    @Override
+    public void deleteUserByEmail(String email) {
+        User user = this.findByEmail(email);
         this.userRepository.delete(user);
     }
 
