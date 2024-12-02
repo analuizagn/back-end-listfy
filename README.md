@@ -60,8 +60,3 @@
 </tr>
 </tbody>
 </table>
-<td><img src="https://static.wixstatic.com/media/b83fad_c0c2c08cac0e4d19b4f63c38fa599c2a~mv2.png/v1/fill/w_560,h_316,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/00_Una_NBrand_Red.png" style="height: 55px; width:100px;"/></td>
-<td><img src="https://anima.uliving.com.br/wp-content/uploads/2021/09/logoAnima.png" style="height: 50px; width:66px;"/></td>
-</tr>
-</tbody>
-</table>
