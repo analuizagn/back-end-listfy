@@ -38,7 +38,7 @@
 <ul>
 <li>Back-end construído utilizando linguagem de programação <strong>Java 17</strong>.</li>
 <li>Integração com <em>banco de dados H2</em> utilizando <strong>Spring Boot 3.3.5</strong>, <strong>Maven 4</strong> e <strong>Flyway</strong>.</li>
-<li>Front-end criado com <strong>React</strong> e estilização <strong>CSS5</strong> e <strong>Axios</strong> para integração com Back-End.</li>
+<li>Front-end criado com <strong>React</strong> e estilização <strong>CSS3</strong> e <strong>Axios</strong> para integração com Back-End.</li>
 </ul>
 
 <h3>Link</h3>
