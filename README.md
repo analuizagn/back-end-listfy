@@ -29,18 +29,18 @@
      <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&amp;logo=Axios&amp;logoColor=fff">
     </a>
 </p>
-     
+    
 <h3>Descrição</h3>
 <p>O Sistema de Gerenciamento de Listas de Compras é uma solução prática e intuitiva para ajudar usuários a organizar, planejar e otimizar suas compras de forma eficiente. Com uma interface amigável e funcionalidades versáteis. Ele permite adicionar itens com categorias, quantidades e observações, sincroniza em múltiplos dispositivos e funciona offline. Ideal para facilitar o planejamento e o controle de suas compras.
 </p>
-
+<hr>
 <h3>Desenvolvimento</h3>
 <ul>
 <li>Back-end construído utilizando linguagem de programação <strong>Java 17</strong>.</li>
 <li>Integração com <em>banco de dados H2</em> utilizando <strong>Spring Boot 3.3.5</strong>, <strong>Maven 4</strong> e <strong>Flyway</strong>.</li>
 <li>Front-end criado com <strong>React</strong> e estilização <strong>CSS3</strong> e <strong>Axios</strong> para integração com Back-End.</li>
 </ul>
-
+<hr>
 <h3>Link</h3>
 <p>Acesse o repositório do Front-End: <a href="https://github.com/biancagomess/listfy/">https://github.com/biancagomess/listfy/</a></p>
 <hr>
@@ -50,7 +50,24 @@
 • Bianca Gomes Alves<br />
 • Gustavo Magosso Gomes<br />
 • Ryan Roberto Marques da Silva
+<hr>
+<h3>Como clonar o projeto</h3>
 
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- [Git](https://git-scm.com)
+- [Node.js](https://node.js.org/en/)  - v16.20.2
+
+```bash
+# Clonar o repositório
+$ git clone < https://github.com/analuizagn/back-end-listfy.git >
+
+# Instale as dependẽncias, digitando o seguinte comando no terminal:
+npm i
+
+# Inicie o projeto com o comando:
+npm start
+
+```
 <sub>UNA Uberlândia</sub>
 <table>
 <tbody>
